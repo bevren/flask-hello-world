@@ -10,7 +10,7 @@ import random
 import re
 from urllib.parse import urlparse
 
-from test import construct_search_ddgs
+from api.test import construct_search_ddgs
 
 
 
