@@ -3,7 +3,7 @@ load_dotenv()
 from flask import Flask, make_response, render_template, request, jsonify
 import os
 from supabase import create_client, Client
-from api.search import do_search
+from .search import do_search
 
 url = os.environ.get("SUPABASE_URL")
 key = os.environ.get("SUPABASE_KEY")
