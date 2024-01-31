@@ -1,0 +1,36 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+.vercel
+*.log
+*.pyc
+__pycache__
+
+# Environments 
+.env 
+.venv 
+env/ 
+venv/ 
+ENV/ 
+env.bak/ 
+venv.bak/ 
+=======
+.venv
+.env
+__pycache__
+.git
+>>>>>>> e20efc1 (first)
+=======
+.vercel
+*.log
+*.pyc
+__pycache__
+
+# Environments 
+.env 
+.venv 
+env/ 
+venv/ 
+ENV/ 
+env.bak/ 
+venv.bak/ 
+>>>>>>> 5cd1a1e (first commit)

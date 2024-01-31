@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+<<<<<<< HEAD
+    { "source": "/(.*)", "destination": "/api/index" }
+  ]
+}
+=======
+    { "source": "/(.*)", "destination": "/api/app" }
+  ]
+}
+>>>>>>> 5cd1a1e (first commit)
