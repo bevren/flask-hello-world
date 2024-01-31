@@ -101,19 +101,18 @@ def construct_format_ddgs(items):
     for i, item in enumerate(items):
 
         result += f"RESULT {i+1}:\n"
-        result += f"TITLE:{item['title']}\n"
-        result += f"SUMMARY:{item['body']}\n"
         result += f"URL:{item['href']}\n\n"
+        result += f"SUMMARY:{item['body']}\n"
 
     return result
 
 
 def do_search(q):
-    #resp = get_results_ddgs(q, num_results=8)
-    #constructed = construct_format_ddgs(resp)
+    resp = get_results_ddgs(q, num_results=8)
+    constructed = construct_format_ddgs(resp)
     now = datetime.datetime.now()
 
-    constructed, resp = construct_search_ddgs(q)
+    #constructed, resp = construct_search_ddgs(q)
 
     system_prompt = f"""You are a helpful assistant. Generate a comprehensive and informative answer in Turkish language(not more than 100 words) for a given question solely based on the provided web search results(URL and summary) in Turkish language.You must only use information from the provided search results. This is the current date and time: {now.strftime("%Y-%m-%d %H:%M:%S")}. Convert search results together into a coherent answer. Never repeat text. Cite search results using [$(number)] notation.Only cite the most relevant results that answers the question accurately.If different results refers to different entities with same name, write seperate answers for each entity.Add cite results at the end of each sentence just like wikipedia."""
 

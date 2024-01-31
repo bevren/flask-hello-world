@@ -69,7 +69,7 @@ def fetch_and_clean(q, url):
 
             """
 
-            summarize_prompt_2 = f""" Summarize the following article using only 200 words.
+            summarize_prompt_2 = f""" Summarize the following article. Maximum 200 words.
 
             - Your response must be in the same language as the provided article.
 
