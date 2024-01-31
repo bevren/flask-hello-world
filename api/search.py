@@ -12,8 +12,6 @@ from urllib.parse import urlparse
 
 from .test import construct_search_ddgs
 
-
-
 API_KEY_SEARCH = os.environ.get("API_KEY_SEARCH_GOOGLE")
 SEARCH_ENGINE_ID = os.environ.get("SEARCH_ENGINE_ID")
 
